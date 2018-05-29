@@ -1,0 +1,23 @@
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.HBox?>
+<GridPane fx:controller="sample.Controller"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+    <padding>
+        <Insets left="10" right="10" top="10" bottom="10"/>
+    </padding>
+
+    <TextField fx:id="textField" GridPane.rowIndex="0" GridPane.columnIndex="0"
+               onAction="#inputAction"/>
+    <HBox alignment="CENTER" GridPane.rowIndex="1" GridPane.columnIndex="0" >
+        <Button text="convert" onAction="#inputAction"/>
+    </HBox>
+
+    <TextArea fx:id="textArea" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+
+</GridPane>
